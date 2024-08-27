@@ -18,7 +18,7 @@ class EventAttendee extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class, 'user_id');
+        return $this->belongsTo(UserEvent::class, 'user_id');
     }
 
     public function event()
